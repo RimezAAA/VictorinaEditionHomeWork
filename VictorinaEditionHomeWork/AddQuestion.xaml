@@ -1,0 +1,26 @@
+﻿<Window x:Class="VictorinaEditionHomeWork.AddQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VictorinaEditionHomeWork"
+        mc:Ignorable="d"
+        Title="AddQuestion" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="215*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,7,0,0" HorizontalAlignment="Center" FontSize="24" Height="38" VerticalAlignment="Top">Вопрос:</TextBlock>
+        <TextBox x:Name="QuestionTextBox" Grid.Row="1" Grid.Column="1" Margin="0,44,0,0" Height="89" VerticalAlignment="Top"></TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,138,0,0" HorizontalAlignment="Center" FontSize="24" Height="38" VerticalAlignment="Top">Ответ:</TextBlock>
+        <TextBox x:Name="AnswerTextBox" Grid.Row="1" Grid.Column="1" Margin="0,171,0,0" Height="50" VerticalAlignment="Top"></TextBox>
+        <Button x:Name="AddToDBBtn" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Margin="0,232,0,0" FontSize="24" Click="AddToDBBtn_Click" Height="37" VerticalAlignment="Top">Добавить</Button>
+    </Grid>
+</Window>

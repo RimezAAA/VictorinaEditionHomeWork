@@ -1,0 +1,27 @@
+﻿<Window x:Class="VictorinaEditionHomeWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VictorinaEditionHomeWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="215*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="AnswerStackPanel" Grid.Row="1" Grid.Column="1" Margin="0,28,0,540" Background="Gray" Orientation="Horizontal" HorizontalAlignment="Center"/>
+        <StackPanel x:Name="QuestionStackPanel" Grid.Row="1" Grid.Column="1" Margin="0,108,0,377" Background="Gray" Orientation="Horizontal" />
+        <StackPanel x:Name="LettersStackPanel" Grid.Row="1" Grid.Column="1" Margin="0,315,0,70" Background="Gray" Orientation="Horizontal" HorizontalAlignment="Center"/>
+        <Button x:Name="AddQuestionBtn" Grid.Column="1" Grid.Row="1" Margin="0,579,655,0" Click="AddQuestionBtn_Click" >Добавить вопрос</Button>
+        <Button x:Name="GetQuestionBtn" Grid.Column="1" Grid.Row="1" Margin="131,579,524,0" Click="GetQuestionBtn_Click" >Получить вопрос</Button>
+        <Button x:Name="ClearAnswerBtn" Grid.Column="1" Grid.Row="1" Margin="131,579,524,0" Click="ClearAnswerBtn_Click" Visibility="Hidden" >Очистить поле</Button>
+    </Grid>
+</Window>
